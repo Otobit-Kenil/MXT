@@ -17,11 +17,11 @@ export class HomePageComponent implements OnInit {
   slider: any[] = [
     {
       id: 1,
-      heading: 'Welcome To Metal X',
+      heading: 'Chemical Analysis',
       image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
+        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/WhatsApp%20Image%202022-01-31%20at%2012.19.50%20AM.jpeg?alt=media&token=12b54faa-ac8f-4caf-87d5-9dc763887021',
       content:
-        "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
+        "Chemical analysis is a process to determine chemical composition of material and see it is complying with their reference standard or not. Mechanical and metallurgical property of the material is largely depends on its chemistry.",
       buttonContent: 'Subscribe',
       created_at: '2021-03-20 12:06:38',
       updated_at: '2021-04-23 14:40:20',
@@ -29,23 +29,24 @@ export class HomePageComponent implements OnInit {
     },
     {
       id: 2,
-      heading: 'Welcome To Metal X',
+      heading: 'Mechanical Testing',
       image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
+        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/WhatsApp%20Image%202022-01-31%20at%2012.33.30%20AM.jpeg?alt=media&token=b8f14d76-caa7-44d7-bd58-82abb6aab3a6',
       content:
-        "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
+        "Mechanical testing is a process to determine physical properties of materials like tensile strength, yield strength, compression strength, bend strength, Impact value, hardness, elongation etc.",
       buttonContent: 'Subscribe',
       created_at: '2021-03-20 12:06:38',
       updated_at: '2021-04-23 14:40:20',
       buttonURL: null,
     },
+
     {
       id: 3,
-      heading: 'Welcome To Metal X',
+      heading: 'Metallography Testing',
       image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
+        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/GettyImages-911834392%20(1).jpg?alt=media&token=c5b1afa3-d395-4b5f-b90d-7d5badfe026b',
       content:
-        "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
+        "Metallography is the study of the materials structure, phase, phase distribution, grain size, inclusion rating etc. at higher magnification. It is very important in failure analysis of material.",
       buttonContent: 'Subscribe',
       created_at: '2021-03-20 12:06:38',
       updated_at: '2021-04-23 14:40:20',
@@ -53,40 +54,40 @@ export class HomePageComponent implements OnInit {
     },
     {
       id: 4,
-      heading: 'Welcome To Metal X',
+      heading: 'Corrosion Testing',
       image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
+        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/WhatsApp%20Image%202022-01-31%20at%2012.18.19%20AM.jpeg?alt=media&token=c2d0a086-e22a-461b-b328-9188fb9c7c05',
       content:
-        "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
+        "Corrosion testing is use to measuring rate of corrosion specially in stainless steel in various corrosive environment. Intergranula corrosion and pitting corrosion are most common types of corrosion observed in stainless steel.",
       buttonContent: 'Subscribe',
       created_at: '2021-03-20 12:06:38',
       updated_at: '2021-04-23 14:40:20',
       buttonURL: null,
     },
-    {
-      id: 5,
-      heading: 'Welcome To Metal X',
-      image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
-      content:
-        "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
-      buttonContent: 'Subscribe',
-      created_at: '2021-03-20 12:06:38',
-      updated_at: '2021-04-23 14:40:20',
-      buttonURL: null,
-    },
-    {
-      id: 6,
-      heading: 'Welcome To Metal X',
-      image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
-      content:
-        "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
-      buttonContent: 'Subscribe',
-      created_at: '2021-03-20 12:06:38',
-      updated_at: '2021-04-23 14:40:20',
-      buttonURL: null,
-    },
+    // {
+    //   id: 5,
+    //   heading: 'Welcome To Metal X',
+    //   image:
+    //     'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
+    //   content:
+    //     "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
+    //   buttonContent: 'Subscribe',
+    //   created_at: '2021-03-20 12:06:38',
+    //   updated_at: '2021-04-23 14:40:20',
+    //   buttonURL: null,
+    // },
+    // {
+    //   id: 6,
+    //   heading: 'Welcome To Metal X',
+    //   image:
+    //     'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/slider.jpeg?alt=media&token=810f8632-897a-48a2-b2ca-26df0bab9f37',
+    //   content:
+    //     "This word has two main meanings. The first has to do with being pleased and satisfied (feeling content) or making someone else feel happy and at peace with things (contenting them). The other meaning has to do with subject matter: the content of a history class might be American history. The content of a math class might be geometry. As long as there's a topic or subject, there's content.",
+    //   buttonContent: 'Subscribe',
+    //   created_at: '2021-03-20 12:06:38',
+    //   updated_at: '2021-04-23 14:40:20',
+    //   buttonURL: null,
+    // },
   ];
   display: any[] = [];
   driveForm: FormGroup;
