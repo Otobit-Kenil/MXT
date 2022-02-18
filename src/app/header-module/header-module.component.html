@@ -13,11 +13,49 @@
                     <ul>
                         <li (click)="onhome()" class="nav-item">Home</li>
                         <li (click)="onabout()" class="nav-item">About Us</li>
-                        <li (click)="nearby()" class="nav-item">Our Services</li>
+                        <!-- <li (click)="nearby()" class="nav-item">Our Services</li> -->
+                        <li><button (click)="openDropdown()" class="welcom-btn">Our Services<img
+                          src="../../assets/images/profile/caret_down.svg" alt=""></button></li>
+                        <div>
+                            <div *ngIf="isopenDropdown" class="user-drop">
+                                <div class="user-detail">
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/services.svg" alt="">
+                                        <h3 (click)="cart()">Our Services1</h3>
+                                    </div>
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/account.svg" alt="">
+                                        <h3>Our Services2</h3>
+                                    </div>
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/services.svg" alt="">
+                                        <h3>Our Services3</h3>
+                                    </div>
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/account.svg" alt="">
+                                        <h3>Our Services4</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="btn-group" mdbDropdown>
+                            <button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light" mdbWavesEffect>
+                            Basic dropdown
+                          </button>
+
+                            <div class="dropdown-menu dropdown-primary">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="divider dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div> -->
+                        <!-- <li #drop class="dropdown singleDro" [ngClass]="{ 'open': isDropdownOpen}" (mouseover)="openDropDown($event)" (mouseleave)="closeDropDown($event)">dropdown-stuff</li> -->
                         <!-- <li (click)="onhome()" class="nav-item">Why Us</li> -->
                         <li (click)="onContact()" class="nav-item">Contact Us</li>
-                        <li (click)="onContact()" class="nav-item">Feedback</li>
-                        <li (click)="onabout()" class="nav-item">Blogs</li>
+                        <!-- <li (click)="onContact()" class="nav-item">Feedback</li>
+                        <li (click)="onabout()" class="nav-item">Blogs</li> -->
 
                         <!-- <li *ngIf="!userName" class="nav-item"><button class="login-btn" (click)="logIn()">Log
                                 In</button></li> -->

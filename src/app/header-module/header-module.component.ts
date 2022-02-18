@@ -34,6 +34,8 @@ export class HeaderModuleComponent implements OnInit {
   Phonenumber: any = '';
 
   isModalOpen: boolean = false;
+  isDropdownOpen = false;
+
   Location = {
     lat: null,
     lng: null,
@@ -41,6 +43,7 @@ export class HeaderModuleComponent implements OnInit {
   area: any;
   area2: any;
   isMobile;
+  navbarDash: any;
   constructor(
     private modalService: NgbModal,
     private headerService: HeaderService,
@@ -51,20 +54,20 @@ export class HeaderModuleComponent implements OnInit {
     private mapService: MapService
   ) {
     this.renderer.listen('window', 'click', (e: Event) => {
-      if (
-        e.target !== this.toggleButton.nativeElement &&
-        e.target !== this.menu.nativeElement
-      ) {
-        this.isMenuOpen = false;
-      }
+      // if (
+      //   e.target !== this.toggleButton.nativeElement &&
+      //   e.target !== this.menu.nativeElement
+      // ) {
+      //   this.isMenuOpen = false;
+      // }
 
-      if (
-        e.target !== this.toggleButton.nativeElement &&
-        e.target !== this.menu.nativeElement &&
-        e.target == this.userProfile.nativeElement
-      ) {
-        this.isMenuOpen = true;
-      }
+      // if (
+      //   e.target !== this.toggleButton.nativeElement &&
+      //   e.target !== this.menu.nativeElement &&
+      //   e.target == this.userProfile.nativeElement
+      // ) {
+      //   this.isMenuOpen = true;
+      // }
       if (
         e.target == this.userProfile.nativeElement &&
         e.target == this.drop.nativeElement
@@ -76,12 +79,19 @@ export class HeaderModuleComponent implements OnInit {
   isMenuOpen = false;
   isopenDropdown = false;
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
   openDropdown() {
     this.isopenDropdown = !this.isopenDropdown;
   }
+
+  closeDropDown(event: Event) {
+    this.isDropdownOpen = false;
+  }
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+  // openDropdown() {
+  //   this.isopenDropdown = !this.isopenDropdown;
+  // }
 
   onClick(event) {
     // for close dropdown on outside dropdown click

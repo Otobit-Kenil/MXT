@@ -15,7 +15,7 @@
             </div>
         </div>
         <div class="select-dervice-car">
-            <carousel [height]="190" [cellWidth]="400" [arrowsOutside]="true">
+            <carousel class="slide" [height]="190" [cellWidth]="400" [arrowsOutside]="true" [interval]="1000">
                 <div class="carousel-cell service-box" *ngFor="let s of slider" (click)="OnChange(s)">
                     <img src="{{s.image}}" alt="{{s.alt}}">
                     <h2>{{s.heading}}</h2>
