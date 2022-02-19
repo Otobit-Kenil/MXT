@@ -54,20 +54,20 @@ export class HeaderModuleComponent implements OnInit {
     private mapService: MapService
   ) {
     this.renderer.listen('window', 'click', (e: Event) => {
-      // if (
-      //   e.target !== this.toggleButton.nativeElement &&
-      //   e.target !== this.menu.nativeElement
-      // ) {
-      //   this.isMenuOpen = false;
-      // }
+      if (
+        e.target !== this.toggleButton.nativeElement &&
+        e.target !== this.menu.nativeElement
+      ) {
+        this.isMenuOpen = false;
+      }
 
-      // if (
-      //   e.target !== this.toggleButton.nativeElement &&
-      //   e.target !== this.menu.nativeElement &&
-      //   e.target == this.userProfile.nativeElement
-      // ) {
-      //   this.isMenuOpen = true;
-      // }
+      if (
+        e.target !== this.toggleButton.nativeElement &&
+        e.target !== this.menu.nativeElement &&
+        e.target == this.userProfile.nativeElement
+      ) {
+        this.isMenuOpen = true;
+      }
       if (
         e.target == this.userProfile.nativeElement &&
         e.target == this.drop.nativeElement
@@ -81,6 +81,10 @@ export class HeaderModuleComponent implements OnInit {
 
   openDropdown() {
     this.isopenDropdown = !this.isopenDropdown;
+    if (!this.isMenuOpen) {
+
+      this.isMenuOpen = true
+    }
   }
 
   closeDropDown(event: Event) {
@@ -102,32 +106,32 @@ export class HeaderModuleComponent implements OnInit {
   ngOnInit() {
     this.Location = JSON.parse(localStorage.getItem('Location') || '[]');
 
-    this.mapService.getArea(this.Location.lat, this.Location.lng).subscribe(
-      (data: any) => {
-        this.area = data.results[0].formatted_address;
-        this.area2 = this.area.slice(0, 35);
-        localStorage.setItem('Address', JSON.stringify(this.area));
+    // this.mapService.getArea(this.Location.lat, this.Location.lng).subscribe(
+    //   (data: any) => {
+    //     this.area = data.results[0].formatted_address;
+    //     this.area2 = this.area.slice(0, 35);
+    //     localStorage.setItem('Address', JSON.stringify(this.area));
 
-        console.log(this.area);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    //     console.log(this.area);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   }
+    // );
 
-    this.headerService.getUserName().subscribe(
-      (data) => {
-        console.log(data, 'newone');
-        if (data['data'] == null) {
-        }
-        this.userName = data['data'].fname;
+    // this.headerService.getUserName().subscribe(
+    //   (data) => {
+    //     console.log(data, 'newone');
+    //     if (data['data'] == null) {
+    //     }
+    //     this.userName = data['data'].fname;
 
-        this.Phonenumber = this.convertmobile(data['data'].mobileNumber);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    //     this.Phonenumber = this.convertmobile(data['data'].mobileNumber);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   }
+    // );
 
     navigator.geolocation.getCurrentPosition((position) => {
       this.Location.lat = position.coords.latitude;
@@ -284,10 +288,26 @@ export class HeaderModuleComponent implements OnInit {
 
     // this.router.navigate(['cart']);
   }
-  service() {
+  mechanical() {
     this.isopenDropdown = !this.isopenDropdown;
 
-    this.router.navigate(['profile/service']);
+    this.router.navigate(['mechanical']);
+  }
+  metallography() {
+    this.isopenDropdown = !this.isopenDropdown;
+
+    this.router.navigate(['metallography']);
+  }
+
+  corrosion() {
+    this.isopenDropdown = !this.isopenDropdown;
+
+    this.router.navigate(['corrosion']);
+  }
+  chemicalanalysis() {
+    this.isopenDropdown = !this.isopenDropdown;
+
+    this.router.navigate(['chemicalanalysis']);
   }
   onabout() {
     this.isopenDropdown = false;

@@ -8,10 +8,15 @@ import { MappageComponent } from './mappage/mappage.component';
 import { PolicyComponent } from './policy/policy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ShopComponent } from './shop/shop.component';
-import { TermComponent } from './term/term.component';
 import { TrackingComponent } from './tracking/tracking.component';
 import { TrackingmapComponent } from './trackingmap/trackingmap.component';
 import { GetAllShopComponent } from './get-all-shop/get-all-shop.component';
+import { ChemicalAnalysisComponent } from './chemical-analysis/chemical-analysis.component';
+import { CorrosionTestingComponent } from './corrosion-testing/corrosion-testing.component';
+import { MechanicalTestingComponent } from './mechanical-testing/mechanical-testing.component';
+import { MetallographyTestingComponent } from './metallography-testing/metallography-testing.component';
+
+
 
 const routes: Routes = [
   { path: 'map', component: MappageComponent },
@@ -26,7 +31,11 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'policy', component: PolicyComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'term', component: TermComponent },
+  { path: 'chemicalanalysis', component: ChemicalAnalysisComponent },
+  { path: 'corrosion', component: CorrosionTestingComponent },
+  { path: 'metallography', component: MetallographyTestingComponent },
+  { path: 'mechanical', component: MechanicalTestingComponent },
+
   { path: 'filterShop', component: GetAllShopComponent },
 
   {
@@ -74,4 +83,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

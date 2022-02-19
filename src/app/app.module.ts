@@ -25,7 +25,6 @@ import { AddProductComponent } from './cart/add-product/add-product.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgxStripeModule } from 'ngx-stripe';
 import { PolicyComponent } from './policy/policy.component';
-import { TermComponent } from './term/term.component';
 import { DpDatePickerModule } from 'ng2-date-picker';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { GetAllShopComponent } from './get-all-shop/get-all-shop.component';
@@ -34,6 +33,10 @@ import { WarningComponent } from './shop/warning/warning.component';
 import { FeedbackComponent } from './about/feedback/feedback.component';
 import { ADDaddressComponent } from './cart/addaddress/addaddress.component';
 import { CartconflictComponent } from './cart/cartconflict/cartconflict.component';
+import { ChemicalAnalysisComponent } from './chemical-analysis/chemical-analysis.component';
+import { MechanicalTestingComponent } from './mechanical-testing/mechanical-testing.component';
+import { MetallographyTestingComponent } from './metallography-testing/metallography-testing.component';
+import { CorrosionTestingComponent } from './corrosion-testing/corrosion-testing.component';
 
 @NgModule({
   declarations: [
@@ -50,13 +53,16 @@ import { CartconflictComponent } from './cart/cartconflict/cartconflict.componen
     AddProductComponent,
     ContactComponent,
     PolicyComponent,
-    TermComponent,
     GetAllShopComponent,
     MailComponent,
     WarningComponent,
     FeedbackComponent,
     ADDaddressComponent,
     CartconflictComponent,
+    ChemicalAnalysisComponent,
+    MechanicalTestingComponent,
+    MetallographyTestingComponent,
+    CorrosionTestingComponent,
   ],
   imports: [
     BrowserModule,
@@ -91,4 +97,4 @@ import { CartconflictComponent } from './cart/cartconflict/cartconflict.componen
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

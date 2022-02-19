@@ -7,18 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  constructor(public router: Router) {}
+  constructor(public router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   onabout() {
     this.router.navigate(['about']);
   }
-  onpolicy(){
+  onpolicy() {
     this.router.navigate(['policy']);
   }
-  ontrack(){
-    this.router.navigate(['tracking']);
+  ontrack() {
+    this.router.navigate(['mechanical']);
   }
   onContact() {
     this.router.navigate(['contact']);

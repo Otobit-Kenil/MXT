@@ -229,4 +229,7 @@
         left: 2%;
         right: 0%;
     }
+    .ano-logo img {
+        width: 50%;
+    }
 }

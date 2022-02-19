@@ -39,14 +39,13 @@ export class HomePageComponent implements OnInit {
       updated_at: '2021-04-23 14:40:20',
       buttonURL: null,
     },
-
     {
       id: 3,
-      heading: 'Metallography Testing',
+      heading: 'Corrosion Testing',
       image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/GettyImages-911834392%20(1).jpg?alt=media&token=c5b1afa3-d395-4b5f-b90d-7d5badfe026b',
+        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/WhatsApp%20Image%202022-01-31%20at%2012.18.19%20AM.jpeg?alt=media&token=c2d0a086-e22a-461b-b328-9188fb9c7c05',
       content:
-        "Metallography is the study of the materials structure, phase, phase distribution, grain size, inclusion rating etc. at higher magnification. It is very important in failure analysis of material.",
+        "Corrosion testing is use to measuring rate of corrosion specially in stainless steel in various corrosive environment. Intergranula corrosion and pitting corrosion are most common types of corrosion observed in stainless steel.",
       buttonContent: 'Subscribe',
       created_at: '2021-03-20 12:06:38',
       updated_at: '2021-04-23 14:40:20',
@@ -54,11 +53,11 @@ export class HomePageComponent implements OnInit {
     },
     {
       id: 4,
-      heading: 'Corrosion Testing',
+      heading: 'Metallography Testing',
       image:
-        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/WhatsApp%20Image%202022-01-31%20at%2012.18.19%20AM.jpeg?alt=media&token=c2d0a086-e22a-461b-b328-9188fb9c7c05',
+        'https://firebasestorage.googleapis.com/v0/b/metalx-7f718.appspot.com/o/WhatsApp%20Image%202022-01-31%20at%2012.33.30%20AM.jpeg?alt=media&token=b8f14d76-caa7-44d7-bd58-82abb6aab3a6',
       content:
-        "Corrosion testing is use to measuring rate of corrosion specially in stainless steel in various corrosive environment. Intergranula corrosion and pitting corrosion are most common types of corrosion observed in stainless steel.",
+        "Metallography is the study of the materials structure, phase, phase distribution, grain size, inclusion rating etc. at higher magnification. It is very important in failure analysis of material.",
       buttonContent: 'Subscribe',
       created_at: '2021-03-20 12:06:38',
       updated_at: '2021-04-23 14:40:20',
@@ -193,17 +192,17 @@ export class HomePageComponent implements OnInit {
     //   console.log(this.slider);
     // });
 
-    this.mapService.getArea(this.Location.lat, this.Location.lng).subscribe(
-      (data: any) => {
-        this.area = data.results[0].formatted_address;
-        localStorage.setItem('Address', JSON.stringify(this.area));
+    // this.mapService.getArea(this.Location.lat, this.Location.lng).subscribe(
+    //   (data: any) => {
+    //     this.area = data.results[0].formatted_address;
+    //     localStorage.setItem('Address', JSON.stringify(this.area));
 
-        console.log(this.area);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+    //     console.log(this.area);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   }
+    // );
   }
 
   about() {

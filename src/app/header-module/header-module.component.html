@@ -1,7 +1,7 @@
 <section class="ano-header">
     <div class=" hea-ano desktop">
         <div class="ano-logo">
-            <img (click)="onhome()" src="../../assets/New/logo.jpg" alt="ANO Solutions">
+            <img (click)="onhome()" src="../../assets/New/logo.jpg" alt="MetalX">
             <!-- <div class="address-display">
                 <img src="../../assets/images/location-header.svg" alt="">
                 <p>{{area2}}...</p>
@@ -21,19 +21,19 @@
                                 <div class="user-detail">
                                     <div class="profile-list">
                                         <img src="../../assets/images/profile/services.svg" alt="">
-                                        <h3 (click)="cart()">Our Services1</h3>
+                                        <h3 (click)="chemicalanalysis()">Chemical Analysis</h3>
                                     </div>
                                     <div class="profile-list">
                                         <img src="../../assets/images/profile/account.svg" alt="">
-                                        <h3>Our Services2</h3>
+                                        <h3 (click)="mechanical()">Mechanical Testing</h3>
                                     </div>
                                     <div class="profile-list">
                                         <img src="../../assets/images/profile/services.svg" alt="">
-                                        <h3>Our Services3</h3>
+                                        <h3 (click)="metallography()">Metallography Testing</h3>
                                     </div>
                                     <div class="profile-list">
                                         <img src="../../assets/images/profile/account.svg" alt="">
-                                        <h3>Our Services4</h3>
+                                        <h3 (click)="corrosion()">Corrosion Testing</h3>
                                     </div>
                                 </div>
                             </div>
@@ -126,11 +126,34 @@
                     <ul>
                         <li (click)="onhome()" class="nav-item">Home</li>
                         <li (click)="onabout()" class="nav-item">About Us</li>
-                        <li (click)="nearby()" class="nav-item">Our Services</li>
+                        <li><button (click)="openDropdown()" #userProfile class="welcom-btn">Our Services<img
+                          src="../../assets/images/profile/caret_down.svg" alt=""></button></li>
+                        <div *ngIf="isopenDropdown">
+                            <div class="user-drop">
+                                <div class="user-detail">
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/services.svg" alt="">
+                                        <h3 (click)="chemicalanalysis()">Chemical Analysis</h3>
+                                    </div>
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/account.svg" alt="">
+                                        <h3 (click)="mechanical()">Mechanical Testing</h3>
+                                    </div>
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/services.svg" alt="">
+                                        <h3 (click)="metallography()">Metallography Testing</h3>
+                                    </div>
+                                    <div class="profile-list">
+                                        <img src="../../assets/images/profile/account.svg" alt="">
+                                        <h3 (click)="corrosion()">Corrosion Testing</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- <li (click)="onhome()" class="nav-item">Why Us</li> -->
                         <li (click)="onContact()" class="nav-item">Contact Us</li>
-                        <li (click)="onContact()" class="nav-item">Feedback</li>
-                        <li (click)="onabout()" class="nav-item">Blogs</li>
+                        <!-- <li (click)="onContact()" class="nav-item">Feedback</li>
+                        <li (click)="onabout()" class="nav-item">Blogs</li> -->
 
                         <!-- <li *ngIf="!userName" class="nav-item"><button class="login-btn" (click)="logIn()">Log
                               In</button></li> -->
@@ -138,38 +161,8 @@
                           <li *ngIf="userName"><button (click)="openDropdown()" class="welcom-btn">{{userName}} <img
                                   src="../../assets/images/profile/caret_down.svg" alt=""></button></li> -->
 
-                        <!-- <div *ngIf="isopenDropdown">
-                              <div class="user-drop">
-                                  <div class="user-detail">
-                                      <div class="user-name">
-                                          <div class="user-mm">
-                                              <h2>{{userName}}</h2>
-                                              <p>+1{{Phonenumber}}</p>
-                                          </div>
-                                          <div>
-                                              <img src="../../assets/images/profile/user-img.png" alt="">
-                                          </div>
-                                      </div>
-                                      <div class="profile-list">
-                                          <img src="../../assets/images/profile/cart.svg" alt="">
-                                          <h3 (click)="cart()">My Cart</h3>
-                                      </div>
-                                      <div class="profile-list">
-                                          <img src="../../assets/images/profile/account.svg" alt="">
-                                          <h3 (click)="account()">My Account</h3>
-                                      </div>
-                                      <div class="profile-list">
-                                          <img src="../../assets/images/profile/services.svg" alt="">
-                                          <h3 (click)="service()">My Services</h3>
-                                      </div>
-                                      <div class="profile-list">
-                                          <img src="../../assets/images/profile/log_out.svg" alt="">
-                                          <h3 (click)="logout()">Logout</h3>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div> -->
+
+                        <!-- </div> -->
                         <!-- <li class="nav-item" *ngIf="!userName"><button class="signup-btn" (click)="signUp()">Sign
                               Up</button></li>
                       <li class="nav-item"><button class="repair-btn" (click)="bookRepair()">Book Repair</button></li>
