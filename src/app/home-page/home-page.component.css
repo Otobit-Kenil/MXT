@@ -105,6 +105,8 @@ h2 {
 
 .about-title {
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .servicelist {
@@ -173,7 +175,7 @@ h2 {
 
 .aboutdetail p {
     font-family: "Poppins-regular";
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .aboutdetail button {
